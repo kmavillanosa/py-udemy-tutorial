@@ -1,2 +1,2 @@
 # py-udemy-tutorial
-For python learning 
+I wrote this note for learning purposes only,
