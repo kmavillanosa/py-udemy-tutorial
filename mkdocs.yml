@@ -1,0 +1,42 @@
+site_name: Python Udemy Tutorial
+site_description: Python fundamentals tutorial and learning notes
+site_author: Your Name
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Section One:
+    - Overview: section-one/README.md
+    - Introduction: section-one/1introduction.md
+    - Variables and Constants: section-one/2variables-and-constants.md
+    - Classes and Objects: section-one/3python-class-and-objects.md
+    - Arrays: section-one/4python-array-implementation.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
