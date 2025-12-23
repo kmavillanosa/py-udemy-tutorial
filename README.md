@@ -12,23 +12,41 @@ You can access the documentation on GitHub Pages:
 
 This project uses [MkDocs](https://www.mkdocs.org/) with the [Material theme](https://squidfunk.github.io/mkdocs-material/) for documentation.
 
-### Setup
+### Running Locally
 
-Install the documentation dependencies:
+Follow these steps to run the documentation on your local machine:
 
-```bash
-pip install -r requirements-docs.txt
-```
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements-docs.txt
+   ```
+   
+   Or if you prefer using a virtual environment (recommended):
+   ```bash
+   # Create virtual environment
+   python -m venv venv
+   
+   # Activate virtual environment
+   # On Windows:
+   venv\Scripts\activate
+   # On macOS/Linux:
+   source venv/bin/activate
+   
+   # Install dependencies
+   pip install -r requirements-docs.txt
+   ```
 
-### View Documentation Locally
+2. **Start the development server**:
+   ```bash
+   mkdocs serve
+   ```
 
-Start the development server:
+3. **Open in your browser**:
+   - The documentation will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
+   - The server will automatically reload when you make changes to the documentation files
 
-```bash
-mkdocs serve
-```
-
-Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
+4. **Stop the server**:
+   - Press `Ctrl+C` in the terminal to stop the development server
 
 ### Build Documentation
 

@@ -43,7 +43,11 @@ nav:
     - Arrays: section-one/4python-array-implementation.md
 
 plugins:
-  - mkdocs-pyscript
+  - search
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js
+  - js/pyodide-runner.js
 
 markdown_extensions:
   - pymdownx.highlight:

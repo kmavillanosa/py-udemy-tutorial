@@ -6,7 +6,7 @@ Welcome to the Python Udemy Tutorial documentation. This project contains learni
 
 This tutorial covers the fundamental concepts of Python programming, organized into sections that build upon each other.
 
-**Interactive Code Execution**: All Python code examples in this documentation can be run directly in your browser! Look for the "LOAD" button in Python code blocks to execute and experiment with the code.
+**Interactive Code Execution**: All Python code examples in this documentation can be run directly in your browser! Look for the "▶ Run Code" button below each Python code block to execute and experiment with the code.
 
 ## Getting Started
 
