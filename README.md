@@ -2,6 +2,12 @@
 
 I wrote this note for learning purposes only.
 
+## Live Documentation
+
+You can access the documentation on GitHub Pages:
+
+**https://kmavillanosa.github.io/py-udemy-tutorial/**
+
 ## Documentation
 
 This project uses [MkDocs](https://www.mkdocs.org/) with the [Material theme](https://squidfunk.github.io/mkdocs-material/) for documentation.
