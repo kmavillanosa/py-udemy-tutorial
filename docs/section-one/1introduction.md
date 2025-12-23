@@ -10,6 +10,8 @@ Basic introduction to Python with simple arithmetic operations and print stateme
 
 ## Code Example
 
+Try running this code interactively by clicking the "LOAD" button that appears in the code block:
+
 ```python
 a = 100
 b = 200

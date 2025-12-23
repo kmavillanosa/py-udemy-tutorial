@@ -42,6 +42,9 @@ nav:
     - Classes and Objects: section-one/3python-class-and-objects.md
     - Arrays: section-one/4python-array-implementation.md
 
+plugins:
+  - mkdocs-pyscript
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
