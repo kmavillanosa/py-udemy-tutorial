@@ -3,7 +3,7 @@
 
 let pyodide = null;
 
-async function loadPyodide() {
+async function loadPyodideInstance() {
     if (!pyodide) {
         pyodide = await loadPyodide({
             indexURL: 'https://cdn.jsdelivr.net/pyodide/v0.24.1/full/'
@@ -121,7 +121,7 @@ function initPyodideRunner() {
             outputDiv.textContent = 'Loading Pyodide...';
             
             try {
-                const pyodideInstance = await loadPyodide();
+                const pyodideInstance = await loadPyodideInstance();
                 
                 // Set up output capture
                 pyodideInstance.runPython(`

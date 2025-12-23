@@ -8,9 +8,11 @@ Basic introduction to Python with simple arithmetic operations and print stateme
 - Basic arithmetic operations
 - Formatted string output using f-strings
 
-## Code Example
+## Try It Yourself
 
-Try running this code interactively by clicking the "▶ Run Code" button below the code block:
+Click the "▶ Run Code" button below each code block to execute the code and see the output in your browser!
+
+### Example 1: Basic Arithmetic
 
 ```python
 a = 100
@@ -21,16 +23,17 @@ print(c)
 print(f"The sum of {a} and {b} is {c}")
 ```
 
-## Running the Code
-
-```bash
-python ./section-one/1introduction.py
-```
-
-## Output
-
+**Expected Output:**
 ```
 300
 The sum of 100 and 200 is 300
+```
+
+## Running Locally
+
+To run the complete file on your computer:
+
+```bash
+python ./section-one/1introduction.py
 ```
 
