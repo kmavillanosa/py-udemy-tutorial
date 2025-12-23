@@ -1,0 +1,17 @@
+/* Python Brand Colors */
+:root {
+  --md-primary-fg-color: #3776ab;        /* Python Blue */
+  --md-primary-fg-color--light: #4a8bc2;
+  --md-primary-fg-color--dark: #2d5a87;
+  --md-accent-fg-color: #ffd343;          /* Python Yellow */
+  --md-accent-fg-color--transparent: rgba(255, 211, 67, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #3776ab;
+  --md-primary-fg-color--light: #4a8bc2;
+  --md-primary-fg-color--dark: #2d5a87;
+  --md-accent-fg-color: #ffd343;
+  --md-accent-fg-color--transparent: rgba(255, 211, 67, 0.1);
+}
+

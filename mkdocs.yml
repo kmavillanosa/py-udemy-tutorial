@@ -13,17 +13,20 @@ theme:
   logo: img/favicon.svg
   palette:
     - scheme: default
-      primary: green
-      accent: teal
+      primary: blue
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: green
-      accent: teal
+      primary: blue
+      accent: amber
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+
+extra_css:
+  - css/custom.css
   features:
     - navigation.tabs
     - navigation.sections
