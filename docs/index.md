@@ -1,6 +1,6 @@
-# Python Udemy Tutorial
+# Kim Learns Python
 
-Welcome to the Python Udemy Tutorial documentation. This project contains learning notes and code examples for Python fundamentals.
+Welcome to Kim Learns Python! This documentation contains learning notes and code examples for Python fundamentals.
 
 ## Overview
 
