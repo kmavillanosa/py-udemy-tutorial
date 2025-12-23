@@ -39,6 +39,18 @@ Comprehensive guide to working with arrays (lists) in Python. Covers:
 - Array slicing
 - Multi-dimensional arrays
 
+### 5file-methods.py
+Comprehensive guide to file operations in Python. Covers:
+- Opening and closing files
+- Reading from files
+- Writing to files
+- Appending to files
+- File modes (r, w, a, x, b, t, +)
+- Using context managers (with statement)
+- Error handling with files
+- File position and seeking
+- Checking file existence
+
 ## Running the Code
 
 To run any file in this section, use:

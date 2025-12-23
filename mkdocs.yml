@@ -46,6 +46,7 @@ nav:
     - Variables and Constants: section-one/2variables-and-constants.md
     - Classes and Objects: section-one/3python-class-and-objects.md
     - Arrays: section-one/4python-array-implementation.md
+    - File Methods: section-one/5file-methods.md
 
 plugins:
   - search
