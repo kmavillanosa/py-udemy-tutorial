@@ -12,15 +12,54 @@ async function loadPyodide() {
     return pyodide;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Find all Python code blocks
-    const codeBlocks = document.querySelectorAll('pre code.language-python, pre code.lang-python');
+// Wait for page to be fully loaded
+function initPyodideRunner() {
+    console.log('Pyodide Runner: Initializing...');
+    // Find all Python code blocks - try multiple selectors for Material theme
+    const selectors = [
+        'pre code.language-python',
+        'pre code.lang-python',
+        'code[class*="python"]',
+        'pre[class*="python"] code',
+        '.highlight.python code',
+        '.highlightcode.language-python'
+    ];
+    
+    let codeBlocks = [];
+    selectors.forEach(selector => {
+        const blocks = document.querySelectorAll(selector);
+        blocks.forEach(block => {
+            if (!codeBlocks.includes(block)) {
+                codeBlocks.push(block);
+            }
+        });
+    });
+    
+    // If no blocks found, try a more general approach
+    if (codeBlocks.length === 0) {
+        const allCodeBlocks = document.querySelectorAll('pre code, code.highlight');
+        allCodeBlocks.forEach(block => {
+            const text = block.textContent || '';
+            // Check if it looks like Python code (has print, def, class, import, etc.)
+            if (text.match(/\b(print|def |class |import |from |if |for |while |= |#)/)) {
+                codeBlocks.push(block);
+            }
+        });
+    }
+    
+    console.log(`Pyodide Runner: Found ${codeBlocks.length} Python code blocks`);
     
     codeBlocks.forEach((codeBlock, index) => {
-        const pre = codeBlock.parentElement;
+        // Find the pre element (parent)
+        let pre = codeBlock.parentElement;
+        while (pre && pre.tagName !== 'PRE') {
+            pre = pre.parentElement;
+        }
+        
+        if (!pre) return;
         
         // Skip if already processed
-        if (pre.querySelector('.pyodide-runner-container')) {
+        if (pre.nextElementSibling && pre.nextElementSibling.classList.contains('pyodide-runner-container')) {
             return;
         }
         
@@ -40,12 +79,20 @@ document.addEventListener('DOMContentLoaded', function() {
         runButton.className = 'md-button md-button--primary';
         runButton.style.marginRight = '10px';
         runButton.style.cursor = 'pointer';
+        runButton.style.padding = '8px 16px';
+        runButton.style.fontSize = '14px';
+        runButton.style.borderRadius = '4px';
+        runButton.style.border = 'none';
         
         // Create clear button
         const clearButton = document.createElement('button');
         clearButton.textContent = 'Clear Output';
         clearButton.className = 'md-button';
         clearButton.style.cursor = 'pointer';
+        clearButton.style.padding = '8px 16px';
+        clearButton.style.fontSize = '14px';
+        clearButton.style.borderRadius = '4px';
+        clearButton.style.border = '1px solid rgba(0,0,0,0.12)';
         
         // Create output div
         const outputDiv = document.createElement('div');
@@ -136,7 +183,24 @@ sys.stderr = _original_stderr
         buttonContainer.appendChild(clearButton);
         container.appendChild(buttonContainer);
         container.appendChild(outputDiv);
-        pre.parentNode.insertBefore(container, pre.nextSibling);
+        
+        // Insert after the pre element
+        if (pre.parentNode) {
+            pre.parentNode.insertBefore(container, pre.nextSibling);
+        } else {
+            pre.after(container);
+        }
     });
-});
+}
+
+// Try multiple times to ensure it runs after page load
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPyodideRunner);
+} else {
+    initPyodideRunner();
+}
+
+// Also try after a short delay in case Material theme loads code blocks dynamically
+setTimeout(initPyodideRunner, 500);
+setTimeout(initPyodideRunner, 1000);
 
