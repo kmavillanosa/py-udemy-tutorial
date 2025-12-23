@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="pythonBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776ab;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d5a87;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pythonYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd343;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Python snake body (blue) -->
+  <path d="M 20 50 Q 20 20 50 20 Q 80 20 80 50 Q 80 70 65 75 L 50 80 Q 35 85 35 70 L 35 50 Q 35 35 50 35 Q 65 35 65 50 Q 65 65 50 65 Q 35 65 20 50 Z" fill="url(#pythonBlue)"/>
+  <!-- Python snake body (yellow) -->
+  <path d="M 80 50 Q 80 80 50 80 Q 20 80 20 50 Q 20 30 35 25 L 50 20 Q 65 15 65 30 L 65 50 Q 65 65 50 65 Q 35 65 35 50 Q 35 35 50 35 Q 65 35 80 50 Z" fill="url(#pythonYellow)"/>
+  <!-- Eye (blue) -->
+  <circle cx="45" cy="42" r="4" fill="white"/>
+  <circle cx="45" cy="42" r="2" fill="#3776ab"/>
+  <!-- Eye (yellow) -->
+  <circle cx="55" cy="58" r="4" fill="white"/>
+  <circle cx="55" cy="58" r="2" fill="#ffd343"/>
+</svg>

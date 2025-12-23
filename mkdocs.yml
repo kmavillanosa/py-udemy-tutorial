@@ -9,6 +9,8 @@ repo_name: py-udemy-tutorial
 
 theme:
   name: material
+  favicon: img/favicon.svg
+  logo: img/favicon.svg
   palette:
     - scheme: default
       primary: green
