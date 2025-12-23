@@ -1,17 +1,24 @@
 site_name: Python Udemy Tutorial
 site_description: Python fundamentals tutorial and learning notes
-site_author: Your Name
+site_author: Kim Avillanosa
+
+# GitHub Pages configuration
+site_url: https://kmavillanosa.github.io/py-udemy-tutorial/
+repo_url: https://github.com/kmavillanosa/py-udemy-tutorial
+repo_name: py-udemy-tutorial
 
 theme:
   name: material
   palette:
     - scheme: default
-      primary: blue
+      primary: green
+      accent: teal
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
+      primary: green
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -21,6 +28,10 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
 
 nav:
   - Home: index.md

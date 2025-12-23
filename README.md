@@ -34,6 +34,23 @@ mkdocs build
 
 The generated site will be in the `site/` directory.
 
+### GitHub Pages Deployment
+
+The documentation is automatically deployed to GitHub Pages when you push to the `main` or `master` branch.
+
+#### Initial Setup
+
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Under "Source", select "GitHub Actions"
+
+2. **Push to GitHub** - The workflow will automatically:
+   - Build the documentation
+   - Deploy it to the `gh-pages` branch
+   - Make it available at [https://kmavillanosa.github.io/py-udemy-tutorial/](https://kmavillanosa.github.io/py-udemy-tutorial/)
+
+The documentation will be automatically updated whenever you push changes to the main branch.
+
 ## Project Structure
 
 - `section-one/` - Python fundamentals tutorial files
