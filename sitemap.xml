@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/section-one/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/section-one/1introduction/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/section-one/2variables-and-constants/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/section-one/3python-class-and-objects/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+    <url>
+         <loc>https://kmavillanosa.github.io/py-udemy-tutorial/section-one/4python-array-implementation/</loc>
+         <lastmod>2025-12-23</lastmod>
+    </url>
+</urlset>
