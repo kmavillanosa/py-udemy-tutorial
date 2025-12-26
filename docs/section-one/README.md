@@ -51,6 +51,27 @@ Comprehensive guide to file operations in Python. Covers:
 - File position and seeking
 - Checking file existence
 
+### 6python-keywords-and-identifiers.py
+Comprehensive guide to all Python keywords with practical examples. Covers:
+- Boolean literals (False, None, True)
+- Logical operators (and, or, not)
+- Conditional statements (if, elif, else)
+- Loops (for, while) and loop control (break, continue)
+- Functions (def, return)
+- Classes (class)
+- Imports (import, from, as)
+- Exception handling (try, except, finally, raise)
+- Context managers (with)
+- Assertions (assert)
+- Deletion (del)
+- Scope (global, nonlocal)
+- Membership and identity (in, is)
+- Lambda functions (lambda)
+- Placeholder (pass)
+- Generators (yield)
+- Asynchronous programming (async, await)
+- Identifier naming rules
+
 ## Running the Code
 
 To run any file in this section, use:

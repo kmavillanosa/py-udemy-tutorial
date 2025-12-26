@@ -1,0 +1,19 @@
+{
+	"watch": [
+		"docs",
+		"mkdocs.yml",
+		"section-one"
+	],
+	"ext": "md,yml,yaml,py",
+	"ignore": [
+		"site/**",
+		"node_modules/**",
+		".git/**",
+		"*.pyc",
+		"__pycache__/**"
+	],
+	"exec": "mkdocs serve",
+	"delay": 500,
+	"verbose": true
+}
+

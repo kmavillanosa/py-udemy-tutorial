@@ -37,9 +37,25 @@ Follow these steps to run the documentation on your local machine:
    ```
 
 2. **Start the development server**:
+   
+   **Option A: Using MkDocs directly** (built-in auto-reload):
    ```bash
    mkdocs serve
    ```
+   
+   **Option B: Using nodemon** (enhanced auto-reload, watches Python files too):
+   ```bash
+   # Install Node.js dependencies (one-time setup)
+   npm install
+   
+   # Start with nodemon (auto-restarts on any file changes)
+   npm run docs:dev
+   ```
+   
+   The nodemon approach provides:
+   - Automatic restart on changes to `.md`, `.yml`, `.yaml`, and `.py` files
+   - Watches both `docs/` and `section-one/` directories
+   - More reliable file watching (similar to nodemon for Node.js projects)
 
 3. **Open in your browser**:
    - The documentation will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
@@ -80,3 +96,5 @@ The documentation will be automatically updated whenever you push changes to the
 - `section-one/` - Python fundamentals tutorial files
 - `docs/` - MkDocs documentation source files
 - `mkdocs.yml` - MkDocs configuration file
+- `package.json` - Node.js configuration for nodemon (optional)
+- `nodemon.json` - Nodemon configuration for enhanced auto-reload

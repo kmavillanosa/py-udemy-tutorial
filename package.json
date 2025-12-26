@@ -1,0 +1,14 @@
+{
+	"name": "py-udemy-tutorial",
+	"version": "1.0.0",
+	"description": "Python tutorial documentation with auto-reload",
+	"scripts": {
+		"docs:serve": "mkdocs serve",
+		"docs:dev": "nodemon",
+		"docs:build": "mkdocs build"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.0"
+	}
+}
+
